@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.swift_version = '5.0'
   s.platform     = :ios, "8.0"
   s.source       = { :git => "https://github.com/KyoheiG3/NavigationNotice.git", :tag => s.version.to_s }
-  s.source_files  = "NavigationNotice/**/*.{h,swift}"
+  s.source_files  = "Sources/NavigationNotice/**/*.{h,swift}"
   s.requires_arc = true
   s.frameworks = "UIKit"
 end

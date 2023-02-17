@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C7144C221A869BE4009AEC5B /* NavigationNotice.h in Headers */ = {isa = PBXBuildFile; fileRef = C7144C211A869BE4009AEC5B /* NavigationNotice.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C7144C281A869BE4009AEC5B /* NavigationNotice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7144C1C1A869BE4009AEC5B /* NavigationNotice.framework */; };
 		C7144C2F1A869BE4009AEC5B /* NavigationNoticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7144C2E1A869BE4009AEC5B /* NavigationNoticeTests.swift */; };
-		C7144C391A869C18009AEC5B /* NavigationNotice.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7144C381A869C18009AEC5B /* NavigationNotice.swift */; };
+		F0DB546A299F67C40020C1B7 /* NavigationNotice.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DB5467299F67C40020C1B7 /* NavigationNotice.swift */; };
+		F0DB546B299F67C40020C1B7 /* NavigationNotice.h in Headers */ = {isa = PBXBuildFile; fileRef = F0DB5468299F67C40020C1B7 /* NavigationNotice.h */; };
+		F0DB546C299F67C40020C1B7 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F0DB5469299F67C40020C1B7 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,12 +26,12 @@
 
 /* Begin PBXFileReference section */
 		C7144C1C1A869BE4009AEC5B /* NavigationNotice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NavigationNotice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C7144C201A869BE4009AEC5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C7144C211A869BE4009AEC5B /* NavigationNotice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationNotice.h; sourceTree = "<group>"; };
 		C7144C271A869BE4009AEC5B /* NavigationNoticeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NavigationNoticeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7144C2D1A869BE4009AEC5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C7144C2E1A869BE4009AEC5B /* NavigationNoticeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationNoticeTests.swift; sourceTree = "<group>"; };
-		C7144C381A869C18009AEC5B /* NavigationNotice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationNotice.swift; sourceTree = "<group>"; };
+		F0DB5467299F67C40020C1B7 /* NavigationNotice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationNotice.swift; sourceTree = "<group>"; };
+		F0DB5468299F67C40020C1B7 /* NavigationNotice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationNotice.h; sourceTree = "<group>"; };
+		F0DB5469299F67C40020C1B7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +56,7 @@
 		C7144C121A869BE4009AEC5B = {
 			isa = PBXGroup;
 			children = (
-				C7144C1E1A869BE4009AEC5B /* NavigationNotice */,
+				F0DB5464299F67C40020C1B7 /* Sources */,
 				C7144C2B1A869BE4009AEC5B /* NavigationNoticeTests */,
 				C7144C1D1A869BE4009AEC5B /* Products */,
 			);
@@ -68,24 +69,6 @@
 				C7144C271A869BE4009AEC5B /* NavigationNoticeTests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		C7144C1E1A869BE4009AEC5B /* NavigationNotice */ = {
-			isa = PBXGroup;
-			children = (
-				C7144C211A869BE4009AEC5B /* NavigationNotice.h */,
-				C7144C381A869C18009AEC5B /* NavigationNotice.swift */,
-				C7144C1F1A869BE4009AEC5B /* Supporting Files */,
-			);
-			path = NavigationNotice;
-			sourceTree = "<group>";
-		};
-		C7144C1F1A869BE4009AEC5B /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				C7144C201A869BE4009AEC5B /* Info.plist */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		C7144C2B1A869BE4009AEC5B /* NavigationNoticeTests */ = {
@@ -105,6 +88,32 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		F0DB5464299F67C40020C1B7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F0DB5465299F67C40020C1B7 /* NavigationNotice */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		F0DB5465299F67C40020C1B7 /* NavigationNotice */ = {
+			isa = PBXGroup;
+			children = (
+				F0DB5466299F67C40020C1B7 /* Swift */,
+				F0DB5468299F67C40020C1B7 /* NavigationNotice.h */,
+				F0DB5469299F67C40020C1B7 /* Info.plist */,
+			);
+			path = NavigationNotice;
+			sourceTree = "<group>";
+		};
+		F0DB5466299F67C40020C1B7 /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				F0DB5467299F67C40020C1B7 /* NavigationNotice.swift */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -112,7 +121,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7144C221A869BE4009AEC5B /* NavigationNotice.h in Headers */,
+				F0DB546B299F67C40020C1B7 /* NavigationNotice.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +209,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0DB546C299F67C40020C1B7 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,7 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7144C391A869C18009AEC5B /* NavigationNotice.swift in Sources */,
+				F0DB546A299F67C40020C1B7 /* NavigationNotice.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,6 +401,7 @@
 		C7144C361A869BE4009AEC5B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -407,6 +418,7 @@
 		C7144C371A869BE4009AEC5B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = NavigationNoticeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kyoheiito.$(PRODUCT_NAME:rfc1034identifier)";
